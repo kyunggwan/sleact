@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "lib": ["ES2020", "DOM"],
-    "jsx": "react",
-    "module": "esnext",
-    "moduleResolution": "Node",
-    "target": "es5",
-    "strict": true,
-    "resolveJsonModule": true,
-    "baseUrl": ".",
+    "esModuleInterop": true, // import react from 'ract'; 웬만하면 켜둬라
+    "sourceMap": true, // 원래 에러난 위치로 가기 쉽다.
+    "lib": ["ES2020", "DOM"], // 프런트 개발시 켜둘것
+    "jsx": "react", // jsx가 다른 프로그램에도 인식되기 때문에 react라고 지정
+    "module": "esnext", // 최신 모듈
+    "moduleResolution": "Node", // import, export도 node가 해석하도록 하겠다.
+    "target": "es5", // es로 작성하더라도 es로 변환하겠다
+    "strict": true, // 타입 체크를 엄격하게, 항상 이렇게 할것!
+    "resolveJsonModule": true, // json은 import json을 허락하겠다?
+    "baseUrl": ".", // import 할때 편하게 하는 설정, import A from ../../../ 이부분 @src/hello.js 절대경로처럼 표시
     "paths": {
       "@hooks/*": ["hooks/*"],
       "@components/*": ["components/*"],
